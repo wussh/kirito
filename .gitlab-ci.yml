@@ -3,7 +3,7 @@ stages:
   - deploy
 
 variables:
-  IMAGE_TAG: "wushie/test:$CI_COMMIT_SHA"
+  IMAGE_TAG: "wushie/test:$CI_PIPELINE_IID"
 
 build:
   stage: build
