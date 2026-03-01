@@ -1,4 +1,4 @@
-FROM golang:1.23.1-alpine3.20 AS first
+FROM golang:1.24.3-alpine3.20 AS first
 WORKDIR /app
 COPY . .
 RUN go mod tidy
