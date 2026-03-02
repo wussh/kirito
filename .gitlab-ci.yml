@@ -7,9 +7,9 @@ variables:
 
 build:
   stage: build
-  image: docker:20
+  image: docker:29
   services:
-    - docker:20-dind
+    - docker:29-dind
   before_script:
     - docker login -u "DOCKER_USER" -p "DOCKER_PASSWORD"
   script:
