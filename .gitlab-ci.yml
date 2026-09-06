@@ -19,7 +19,7 @@ build:
 
 deploy:
   stage: deploy
-  image: alpine/k8s:1.28.13
+  image: alpine/k8s:1.37.0
   script:
     - kubectl get pod
     - kubectl apply -f test.yaml
